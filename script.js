@@ -75,7 +75,7 @@
 //       Contact: ${contact}
 //       Batch: ${batch}
 
-    
+   
 // `
 // alert(card)
 
@@ -128,27 +128,111 @@
 // }
 // alert(`Your Grade is ${grade}`)
 
-let purchase_amount = prompt("Enter your purchase Amount")
-let purchase = " "
-if(purchase_amount >= 50000){
-    purchase = "20%"
-}
-else if(purchase_amount >= 40000){
-    purchase = "15%"
-}
-else if(purchase_amount >= 30000){
-    purchase = "12%"
-}
-else if(purchase_amount >= 20000){
-    purchase = "10%"
-}
-else if(purchase_amount >= 15000){
-    purchase = "5%"
-}
-else if(purchase_amount >= 10000){
-    purchase = "2%"
-}
-else{
-    purchase = "0%"
-}
-alert(`Your Discount is ${purchase}`)
+
+// let purchase_amount = prompt("Enter your purchase Amount")
+// let discount = " "
+// if(purchase_amount >= 50000){
+//     discount = "20%"
+// }
+// else if(purchase_amount >= 40000){
+//     discount = "15%"
+// }
+// else if(purchase_amount >= 30000){
+//     discount = "12%"
+// }
+// else if(purchase_amount >= 20000){
+//     discount = "10%"
+// }
+// else if(purchase_amount >= 15000){
+//     discount = "5%"
+// }
+// else if(purchase_amount >= 10000){
+//     discount = "2%"
+// }
+// else{
+//     discount = "0%"
+// }
+// alert(`Your Discount is ${purchase}`)
+
+/////////////////      ARRAY  //////////////////////
+
+
+
+// let student = ["Farhad", "Adil", "Salman", "Nasir"]
+
+// console.log(student[3])
+
+// console.log(student.pop())
+
+
+// console.log(student.splice(1,0,"jawad"))
+// console.log(student.push("A", "B", "C", "D"))
+
+// console.log(student.unshift(12, 234,"wazir khan","jawad alam khan shah"))
+// console.log(student.shift())
+// console.log(student)
+// console.log(student.slice(2,7))
+
+
+
+
+///////////////////////////// LOOP //////////////////////////////////////////////
+
+// for (let a=0; a<10; a++){
+//   console.log(a, "Nasir Hussain")
+// }
+
+// for (let a=0; a<=10; a=a+2){
+//   console.log(a,"Pakistan")
+// }
+
+ //let friends = ["Ali", "Nawaz", "Adil", "Afnan", "Zahoor", "Salman", "Farhad"]
+
+// console.log("Hello Dear friend Mr"+" " + friends[0] + " " +"your are invited at party")
+// console.log("Hello Dear friend Mr"+" " + friends[1] + " " +"your are invited at party")
+// console.log("Hello Dear friend Mr"+" " + friends[2] + " " +"your are invited at party")
+// console.log("Hello Dear friend Mr"+" " + friends[3] + " " +"your are invited at party")
+// console.log("Hello Dear friend Mr"+" " + friends[4] + " " +"your are invited at party")
+// console.log("Hello Dear friend Mr"+" " + friends[5] + " " +"your are invited at party")
+// console.log("Hello Dear friend Mr"+" " + friends[6] + " " +"your are invited at party")
+
+
+// for(i=0; i<friends.length; i++){
+//   console.log(`Hello Dear friend Mr ${friends[i]}you are invited at the party`)
+// }
+
+// let friends = ["Ali", "Nawaz", "Adil", "afnan", "Zahoor", "Salman", "Farhad"]
+
+// for(a=0; a<friends.length; a++){
+// if(friends[a][0]=="A"){
+//    console.log(`Hello Dear friend Mr ${friends[a]}you are invited at the party`)
+
+// }
+// }
+
+// for(a=0; a<friends.length; a++){
+//   if(friends[a].endsWith("r")){
+//      console.log(`Hello Dear friend Mr ${friends[a]} you are invited at the party`)
+
+//   }
+// }
+
+
+// for(a=0; a<friends.length; a++){
+//   if(friends[a].startsWith("A") || friends[a].startsWith("a")){
+//       console.log(`Hello Dear friend Mr ${friends[a]} you are invited at the party`)
+
+//   }
+// }
+
+
+// let usernames = []
+// for(a=0; a<5; a++){
+//   let username = prompt("Enter username")
+//   usernames.push(username)
+// }
+// console.log(usernames)
+ 
+
+ 
+
