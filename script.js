@@ -232,7 +232,99 @@
 //   usernames.push(username)
 // }
 // console.log(usernames)
- 
 
+
+// let friend_list = []
+// for(let a=0; a<5; a++){
+//   let friend = prompt("Enter friends name and pree q to quit")
+//   if(friend=="q"){
+//     break }
+//   else{
+//     friend_list.push(friend)
+//   }
+
+// }
+// console.log(friend_list)
+
+
+///////////////////////////////////////////// While loop //////////////////////////////
+
+// var counter = 0
+// var sum = 0
+
+// while(counter < 10)
+// {
+//   let number = prompt("enter a number or pree q to quit")
+//   if(number != "q"){
+//     sum += number
+//         counter +=1
+//   }
+//   else{
+//     break;
+//   }
+// }
+// alert(sum)
+
+
+
+// let sum = 0
+// let flag = true
  
+// while(flag)
+// {
+//   let number = prompt("enter a number or pree q to quit")
+//   if(number != "q")
+//   {
+//     sum += Number(number)
+
+//   }
+//   else{
+//     flag=false
+//   }
+// }
+// alert(sum)
+
+
+
+
+// let sum = 0
+// var number = parseInt(prompt("Enter a number"))
+
+// while(number > 0)
+
+
+//   {
+//     sum += Number(number)
+
+//      number = parseInt(prompt("Enter a number"))
+//   }
+  
+// alert(sum)
+
+/////////////////////////////////// Table ////////////////////////
+// let table_num = parseInt(prompt("enter table number"))
+// for(let a=1; a<=10; a++){
+//   console.log(`${table_num} * ${a} = ${table_num*a}`)
+
+// }
+// console.log(table_num)
+
+
+//  let table_num = parseInt(prompt("enter table number"))
+//  while(table_num <= 10){
+//   let a = 1
+//      console.log(`${table_num} * ${a} = ${table_num*a}`)
+
+//  }
+
+
+let tables = Number(prompt("enter how many tables"))
+//outer
+for(let a=2; a<=tables; a++){
+  //inner
+  for(c=1; c<=10; c++){
+    console.log(`${a} * ${c} = ${a*c}`)
+  }
+}
+
 
