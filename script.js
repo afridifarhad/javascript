@@ -305,7 +305,6 @@
 // let table_num = parseInt(prompt("enter table number"))
 // for(let a=1; a<=10; a++){
 //   console.log(`${table_num} * ${a} = ${table_num*a}`)
-
 // }
 // console.log(table_num)
 
@@ -318,13 +317,117 @@
 //  }
 
 
-let tables = Number(prompt("enter how many tables"))
-//outer
-for(let a=2; a<=tables; a++){
-  //inner
-  for(c=1; c<=10; c++){
-    console.log(`${a} * ${c} = ${a*c}`)
+// let tables = Number(prompt("enter how many tables"))
+// //outer
+// for(let a=2; a<=tables; a++){
+//   //inner
+//   for(c=1; c<=10; c++){
+//     console.log(`${a} * ${c} = ${a*c}`)
+//   }
+// }
+
+
+
+// let tables = Number(prompt("Enter how many tables"));
+// let a = 2;
+// while (a <= tables) {
+//   let c = 1;
+  //   while (c <= 10) {
+//     console.log(`${a} * ${c} = ${a * c}`);
+//     c++;
+//   }
+  //   a++;
+// }
+
+ 
+
+////////////////////////////////////    Function    /////////////////////////////////////////////////
+
+
+// //// declaring a function 
+//  ////parameter less function 
+// function addition() {
+//   let a = 10
+//   let b = 20
+//   let c = a + b
+//   console.log(c)
+// }
+// //// calling function
+// addition();
+
+
+// //// parameterised function
+
+// function addtwovalue (a, b){
+//   c = a + b
+//   console.log(c)
+// }
+// //// value pass to a function is argument 
+// addtwovalue(100, 200)
+// addtwovalue(20, 50)
+
+
+
+// function addtwovalue (a,b){
+//   d = a + b
+//   return d
+// }
+// answer = addtwovalue(10, 2);
+
+
+
+/////write a functin that takes an array of numbers and return the array of square of the numbers/////////
+
+// function sqaure_arr (arr){
+//   sqaured = []
+//   for(let a=0; a<arr.length; a++){
+//     sqaured.push(arr[a]**2)
+//   }
+//   return sqaured
+// }
+// answer = sqaure_arr([2, 3, 13, 12, 4, 6, 8])
+// console.log(answer)
+
+
+//// write a function that calculates tax over income.
+//  write a function that calculates 
+// tax over income. 
+// 100k >> 10%
+// 50k >>  8%
+// 30 >>  5%
+//  15 >> 3%
+//      >> 1%
+
+function income_tax_calc(income){ // 35000
+
+  if (income >=100000){
+      return income*.10
   }
+  else{
+      if (income >=50000){
+          return income*.08
+      }
+      else{
+          if (income >=30000){
+              return income*.05
+          }
+          else{
+              if(income>=15000){
+                  return income*.03
+              }
+              else{
+                  return income*.01
+              }
+          }
+      }
+  }
+  
 }
+
+console.log(income_tax_calc(70000))
+
+
+
+
 
 
