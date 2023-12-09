@@ -398,36 +398,158 @@
 //  15 >> 3%
 //      >> 1%
 
-function income_tax_calc(income){ // 35000
+// function income_tax_calc(income){ // 35000
 
-  if (income >=100000){
-      return income*.10
-  }
-  else{
-      if (income >=50000){
-          return income*.08
-      }
-      else{
-          if (income >=30000){
-              return income*.05
-          }
-          else{
-              if(income>=15000){
-                  return income*.03
-              }
-              else{
-                  return income*.01
-              }
-          }
-      }
-  }
+//   if (income >=100000){
+//       return income*.10
+//   }
+//   else{
+//       if (income >=50000){
+//           return income*.08
+//       }
+//       else{
+//           if (income >=30000){
+//               return income*.05
+//           }
+//           else{
+//               if(income>=15000){
+//                   return income*.03
+//               }
+//               else{
+//                   return income*.01
+//               }
+//           }
+//       }
+//   }
   
-}
+// }
 
-console.log(income_tax_calc(70000))
+// console.log(income_tax_calc(20000))
+
+
+////////////////////// switch ////////////////////////////
+
+
+// let days = prompt("Enter a day").toLowerCase()
+
+// switch(days){
+
+//     case "saturday":
+//         alert("weekend")
+//         break;
+
+
+//         case "sunday":
+//             alert("weekend")
+//             break;
+
+//             case "monday":
+//                 alert("week day")
+//                 break;
+
+//                 case "tuesday":
+//                 alert("week day")
+//                 break;
+
+//                 case "wednesday":
+//                     alert("week day")
+//                     break;
+
+//                     case "friday":
+//                         alert("work day")
+//                         break;
+//             default:
+//                 alert("enter valid day")
+                
+//}
+
+
+// let date = prompt("enter the date")
+
+// switch(date){
+//     case "1":
+//     case "2":
+//     case "3":
+//     case "4":
+//     case "5":
+//     case "6":
+//     case "7":
+//     case "8":
+//     case "9":
+//     case "10":
+//         alert("the date between 1 to 10")
+//         break;
+
+//         case "11":
+//         case "12":
+//         case "13":
+//         case "14":
+//         case "15":
+//         case "16":
+//         case "17":
+//         case "18":
+//         case "19":
+//         case "20":
+//             alert("the date between 11 to 20")
+//             break;
+
+//             case "21":
+//             case "22":
+//             case "23":
+//             case "24":
+//             case "25":
+//             case "26":
+//             case "27":
+//             case "28":
+//             case "29":
+//             case "30":
+        //    case "31":
+        //     alert("the date between 21 to 31")
+        //     break;
+
+        //     default:
+        //         alert("enter valid day")
+// }
+
+
+// let age = prompt("Enter your Age")
+
+// switch(true){
+//     case (age >0 && age<= 2):
+//         alert("toddler")
+//         break;
+
+//         case (age >2 && age<= 13):
+//             alert("Kid")
+//             break;
+
+//             case (age >13 && age<= 20):
+//                 alert("Teenager")
+//                 break;
+
+//                 case (age >20 && age<= 40):
+//                     alert("Young")
+//                     break;
+
+//                     case (age >40 && age<= 60):
+//                         alert("Grownup Man")
+//                         break;
+
+//                         default:
+//                             alert("Old Man")
+// }
 
 
 
+var rightNow = new Date()
+alert(rightNow)
+
+alert(rightNow.getFullYear())
+alert(rightNow.getDate())
+alert(rightNow.getDay())
+alert(rightNow.getHours())
+alert(rightNow.getFullYear())
+alert(rightNow.getMinutes())
 
 
 
