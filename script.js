@@ -539,17 +539,99 @@
 //                             alert("Old Man")
 // }
 
+// var rightNow = new Date()
+// alert(rightNow)
 
-
-var rightNow = new Date()
-alert(rightNow)
-
-alert(rightNow.getFullYear())
-alert(rightNow.getDate())
-alert(rightNow.getDay())
-alert(rightNow.getHours())
-alert(rightNow.getFullYear())
-alert(rightNow.getMinutes())
+// alert(rightNow.getFullYear())
+// alert(rightNow.getDate())
+// alert(rightNow.getDay())
+// alert(rightNow.getHours())
+// alert(rightNow.getFullYear())
+// alert(rightNow.getMinutes())
 
 
 
+//////////////////////////////  Object  ////////////////////////////////////////////
+
+// let person = {
+//   name:  "afnan",
+//   age: 10,
+//   gender: "male"
+// }
+// for(i in person){
+//   console.log(`${i}: ${person[i]}`)
+// }
+
+
+// var student = {
+//   Name:)  "Nawaz Khan",
+//   id:  201298,
+//   age: 20,
+//   address:{
+//     country:  "Pakistan",
+//     city: "Peshawar",
+//     street_code:   220,
+    
+//   }
+    
+// }
+// student.Name = "hassan khan"// update the object replace name
+// student.id = 201359, // update student id 
+
+// console.log(student.Name)
+// console.log(student.id)
+
+
+// let user = {
+//   name: "nasir",
+//   email: "nasir@gmail.com",
+//   age: 30,
+//   dob: new Date("july, 5, 1999"),
+//   active: true
+// }
+// /////// update the object /////////////
+// user.name = "farhad"
+// user.email = "farhad@gmail.com"
+// user.age = 25
+// user.active = false
+// ////////////  delete the object //////////////
+// delete user.name
+// delete user.email
+// delete user.age
+
+
+// for(key in user){
+
+//    console.log(`${key}: ${user[key]}`)
+// }
+
+
+let patient_1 = {id: 1, name: "khan", disease: "tb"}
+let patient_2 = {id: 114, name: "nasir", disease: "typhoid"}
+let patient_3 = {id: 1325, name: "zahoor", disease: "tb"}
+let patient_4 = {id: 1356, name: "rafi", disease: "moye moye"}
+let patient_5 = {id: 1324, name: "wazir", disease: "typhoid"}
+let patient_6 = {id: 6841, name: "salman", disease: "tb"}
+let patient_7 = {id: 941, name: "haroon", disease: "moye moye"}
+let patient_8 = {id: 641, name: "qamar", disease: "tb"}
+let patient_9 = {id: 1241, name: "hasnain", disease: "tb"}
+let patient_10 = {id: 5121, name: "naveed", disease: "tb"}
+
+
+let patients =[patient_1, patient_2, patient_3, patient_4, patient_5, patient_6, patient_7,
+  patient_8, patient_9, patient_10]
+
+
+  // for(let i = 0; i < patients.length; i++){
+  //   console.log(patients[i])
+  // }
+
+for(let a=0; a<patients.length; a++){
+  for (key in patients[a]){
+    if(key=="disease"){
+      if(patients[a][key]=="moye moye"){
+        console.log(patients[a][key], patients[a]["name"])
+      }
+    }
+  }
+}
