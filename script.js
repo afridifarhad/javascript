@@ -606,32 +606,133 @@
 // }
 
 
-let patient_1 = {id: 1, name: "khan", disease: "tb"}
-let patient_2 = {id: 114, name: "nasir", disease: "typhoid"}
-let patient_3 = {id: 1325, name: "zahoor", disease: "tb"}
-let patient_4 = {id: 1356, name: "rafi", disease: "moye moye"}
-let patient_5 = {id: 1324, name: "wazir", disease: "typhoid"}
-let patient_6 = {id: 6841, name: "salman", disease: "tb"}
-let patient_7 = {id: 941, name: "haroon", disease: "moye moye"}
-let patient_8 = {id: 641, name: "qamar", disease: "tb"}
-let patient_9 = {id: 1241, name: "hasnain", disease: "tb"}
-let patient_10 = {id: 5121, name: "naveed", disease: "tb"}
+// let patient_1 = {id: 1, name: "khan", disease: "tb"}
+// let patient_2 = {id: 114, name: "nasir", disease: "typhoid"}
+// let patient_3 = {id: 1325, name: "zahoor", disease: "tb"}
+// let patient_4 = {id: 1356, name: "khan", disease: "moye moye"}
+// let patient_5 = {id: 1324, name: "wazir", disease: "typhoid"}
+// let patient_6 = {id: 6841, name: "salman", disease: "tb"}
+// let patient_7 = {id: 941, name: "haroon", disease: "moye moye"}
+// let patient_8 = {id: 1, name: "qamar", disease: "typhoid"}
+// let patient_9 = {id: 1241, name: "hasnain", disease: "tb"}
+// let patient_10 = {id: 5121, name: "khan", disease: "tb"}
 
 
-let patients =[patient_1, patient_2, patient_3, patient_4, patient_5, patient_6, patient_7,
-  patient_8, patient_9, patient_10]
+// let patients =[patient_1, patient_2, patient_3, patient_4, patient_5, patient_6, patient_7,
+//   patient_8, patient_9, patient_10]
 
 
   // for(let i = 0; i < patients.length; i++){
   //   console.log(patients[i])
   // }
 
-for(let a=0; a<patients.length; a++){
-  for (key in patients[a]){
-    if(key=="disease"){
-      if(patients[a][key]=="moye moye"){
-        console.log(patients[a][key], patients[a]["name"])
-      }
-    }
+// for(let a=0; a<patients.length; a++){
+//   for (key in patients[a]){
+//     if(key=="disease"){
+//       if(patients[a][key]=="moye moye"){
+//         console.log(patients[a][key], patients[a]["name"])
+//       }
+//     }
+//   }
+// }
+
+
+// patient_1.name = "farhad", patient_1.id = 12000, patient_1.disease = "none"
+
+// let a = patients.push(patient => patient.name === "farhad")
+// console.log(a)
+
+// for(let i = 0; i < patients.length; i++){
+//      console.log(patients[i])
+//   }
+
+////////////////////////////////////////  events ////////////////////////////////////////
+
+
+// function mycode(name){
+
+//   alert("helo world"+ " : " + name.toUpperCase())
+// }
+
+// function sum (a, b){
+
+//   alert(a + b);
+// }
+
+// function add (num1, num2){
+
+//   alert(num1 +  num2)
+// }
+
+
+// function img () {
+//   alert("helo image")
+// }
+
+// function checkAddress(email) {
+//   let useremail = document.getElementById(email).value
+//   if (useremail === "") {
+//           alert("Email address required.");
+//   }
+//   else{
+//       document.write(`Welcome : ${useremail}`)
+//   }
+// }
+
+
+
+// let emails = ['aghanhussain@gmail.com', 'shahva2022@gmail.com',
+//               'farhad@gmail.com', 'cslearner@gmail.com']
+// function checkAddress(email) {
+//     let useremail = document.getElementById(email).value
+//     if (useremail !== "") {
+//         if (emails.includes(useremail)){
+
+//             document.write(`Welcome: ${useremail}`)
+//         }
+//         else{
+//             alert("Invalid Email Adrress")
+//         }   
+//      }
+//     else{
+//         alert("Email address required.");
+//     }
+// }
+
+
+function fillCity() {
+  var cityName;
+  var zipEntered = document.getElementById("zip").value;
+
+  switch (zipEntered) {
+
+  case "60608" :
+  cityName = "Chicago";
+  break;
+
+  case "68114" :
+  cityName = "Omaha";
+  break;
+
+  case "53212" :
+  cityName = "Milwaukee";
+  break;
+
+  default:
+   cityName = "Peshawar";
+   }
+   
+   document.getElementById("city").value = cityName;
   }
-}
+
+  
+
+  function expandLoris(){
+    var expandedParagraph = `Slow lorises are a group of several species of trepsirrhine primates which
+    make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of
+    distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several
+    adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time.
+    Slow lorises have a toxic bite, a rare trait among mammals.`;
+    
+    document.getElementById("slowLoris").innerHTML = expandedParagraph;
+  }
